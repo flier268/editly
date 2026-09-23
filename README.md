@@ -24,6 +24,14 @@ See [examples](https://github.com/mifi/editly/tree/master/examples)
 
 `npm i -g @flier268/editly`
 
+### Agent skill
+
+Install the `editly` skill so an agent can drive this CLI:
+
+```sh
+npx skills add flier268/editly --skill editly
+```
+
 ## Usage: Command line video editor
 
 Run `editly --help` for usage
