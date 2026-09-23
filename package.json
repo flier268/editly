@@ -1,5 +1,5 @@
 {
-  "name": "@kesimo/editly",
+  "name": "@flier268/editly",
   "description": "Simple, sexy, declarative video editing",
   "version": "0.20.0",
   "module": "./dist/index.js",
@@ -53,6 +53,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kesimo/editly.git"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "bin": {
     "editly": "dist/cli.js"
