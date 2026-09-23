@@ -22,7 +22,7 @@ See [examples](https://github.com/mifi/editly/tree/master/examples)
 
 ## Installing
 
-`npm i -g editly`
+`npm i -g @flier268/editly`
 
 ## Usage: Command line video editor
 
@@ -59,7 +59,7 @@ Without `--fast`, it will default to using the **width**, **height** and **frame
 ## JavaScript library
 
 ```js
-import editly from "editly";
+import editly from "@flier268/editly";
 
 // See editSpec documentation
 await editly(editSpec);
@@ -395,7 +395,7 @@ $ docker cp editly:/outputs/audio1.mp4 .
 
 ## Troubleshooting
 
-- If you get `Error: The specified module could not be found.`, try: `npm un -g editly && npm i -g --build-from-source editly` (see [#15](https://github.com/mifi/editly/issues/15))
+- If you get `Error: The specified module could not be found.`, try: `npm un -g @flier268/editly && npm i -g --build-from-source @flier268/editly` (see [#15](https://github.com/mifi/editly/issues/15))
 - If you get an error about gl returning null, see Requirements.
 - If you get an error `/bin/sh: pkg-config: command not found`, try to use newest Node.js LTS version
 
