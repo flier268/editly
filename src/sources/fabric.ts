@@ -4,6 +4,11 @@ import { boxBlurImage } from "../BoxBlur.js";
 import { defineFrameSource } from "../api/index.js";
 import type { FabricLayer } from "../types.js";
 
+// Fabric 7 defaults origin to center. Keep the Fabric 6 left/top origin so
+// layers that omit originX/originY stay in the same place.
+fabric.FabricObject.ownDefaults.originX = "left";
+fabric.FabricObject.ownDefaults.originY = "top";
+
 // Fabric is used as a fundament for compositing layers in editly
 
 export function canvasToRgba(ctx: CanvasRenderingContext2D) {
